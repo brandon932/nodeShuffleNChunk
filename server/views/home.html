@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+
+  <h1>{{ title }}</h1>
+  <form class="shuffle-form" action="/shuffle" method="get">
+    <input type="submit" value="Shuffle! "></input>
+  </form>
+  <br>
+  <form class="shuffle-form" action="/chunk" method="get">
+    <input type="submit" value="Chunk!"></input>
+  </form>
+  <br>
+  <form class="shuffle-form" action="/shuffleNChunk" method="get">
+    <input type="submit" value="Shuffle N'Chunk!"></input>
+  </form>
+</div>
+
+{% endblock %}

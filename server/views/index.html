@@ -14,11 +14,18 @@
     <br>
     <ul>
       New Array:
-      {% for chunk in array2  %}
+      {% if title != "Shuffle" %}
+      {% for chunk in array2 %}
       <li>{{chunk}}</li>
       {%endfor%}
+      {%else%}
+      <li>{{array2}}</li>
+      {%endif%}
     </ul>
   </div>
+  <form class="" action="/" method="get">
+    <input type="submit" name="name" value="Reset">
+  </form>
 
 </div>
 

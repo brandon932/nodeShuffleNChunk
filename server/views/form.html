@@ -5,17 +5,19 @@
 
 {% block content %}
 
-  <div class="container">
+<div class="container">
 
-    <h1>{{ title }}</h1>
-    <form class="shuffle-form" action="/submit" method="post">
-      <input type="number" name="things" placeholder="things.." value="">
-      <br>
+  <h1>{{ title }}</h1>
+  <form class="shuffle-form" action='{{title}}' method="post">
+    <input type="string" name="things" placeholder="things.." value="">
+    <br>
+    {% if title != "Shuffle" %}
       <input type="number" name="chunks" placeholder="chunks.."value="">
       <br>
-      <input type="submit" ></input>
-    </form>
+    {% endif %}
+    <input type="submit" ></input>
+  </form>
 
-  </div>
+</div>
 
 {% endblock %}
