@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+    <form class="shuffle-form" action="/submit" method="post">
+      <input type="number" name="things" placeholder="things.." value="">
+      <br>
+      <input type="number" name="chunks" placeholder="chunks.."value="">
+      <br>
+      <input type="submit" ></input>
+    </form>
+
+  </div>
+
+{% endblock %}
